@@ -1,4 +1,6 @@
 
 var testing = JSON.parse(testing.json);
 
-document.getElementById("demo").innerHTML = testing.Im;
+function function(){
+  document.getElementById("demo").innerHTML = testing.Im;
+}
