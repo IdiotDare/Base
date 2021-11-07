@@ -48,7 +48,7 @@ ctx.arc(95, 50, 40, 0, 2 * Math.PI);
 ctx.stroke();
 
     
-    
+ -------------------------------------------   
     
 var canvas = document.getElementById("myCanvas");
     
@@ -57,3 +57,18 @@ var ctx = canvas.getContext("2d");
 ctx.font = "30px Arial"; 
     
 ctx.fillText("Hello World", 10, 50);//draws filled text, use strokeText(text,x,y) for no fill
+
+    -------------------------------
+ctx.textAlign = "center";
+ctx.fillText("Hello World", canvas.width/2, canvas.height/2)
+    ----------------------
+<p>    window.onload = function() {<br>
+  var canvas = document.getElementById("myCanvas");<br>
+  var ctx = canvas.getContext("2d");<br>
+  var img = document.getElementById("scream");<br>
+  ctx.drawImage(img, 10, 10);//adds image to canvas basically drawImage(image,x,y)<br>
+}<p/>
+  ---------------------
+<a href="https://www.w3schools.com/graphics/canvas_reference.asp">Link the list of getContext properties</a>
+    
+    
