@@ -22,7 +22,38 @@ Here we go.
     <p> the getContext() is a built in HTML Object, with properties and methods for drawing.</p>
     <p> var ctx = canvas.getContext("2d"); </p>
     <p>Time to actually draw on the canvas. <br>
-      Set a fill style!(like, color and stuff)    ctx.fillStyle = "#FF0000";
+      Set a fill style!(like, color and stuff)    ctx.fillStyle = "#FF0000";<br>
       The fillStyle property can be a CSS color, a gradient, or a pattern. The default fillStyle is black. <br>
       The fillRect(x,y,width,height) method draws a rectangle, filled with the fill style, on the canvas:<br>
       ctx.fillRect(0, 0, 150, 75); </p>
+    <p> <strong>Canvas coordinates</strong></p>
+    <p> The HTML canvas is a two-dimensional grid. The upper-left corner of the canvas has the coordinates (0,0)</p>
+    <p>To draw a straight line on a canvas, use the following methods:<br>
+      moveTo(x,y) - defines the starting point of the line<br>
+      lineTo(x,y) - defines the ending point of the line<br>
+      To actually draw the line, you must use one of the "ink" methods, like stroke(). Still usings ctx.</p>
+    <p>To draw a circle on a canvas, use the following methods:
+<br>
+beginPath() - begins a path<br>
+arc(x,y,r,startangle,endangle) - creates an arc/curve. To create a circle with arc(): Set start angle to 0 and end angle to 2*Math.PI. The x and y parameters define the x- and y-coordinates of the center of the circle. The r parameter defines the radius of the circle.</p>
+    
+var canvas = document.getElementById("myCanvas");
+
+var ctx = canvas.getContext("2d");
+    
+ctx.beginPath();
+    
+ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+    
+ctx.stroke();
+
+    
+    
+    
+var canvas = document.getElementById("myCanvas");
+    
+var ctx = canvas.getContext("2d");
+    
+ctx.font = "30px Arial"; 
+    
+ctx.fillText("Hello World", 10, 50);//draws filled text, use strokeText(text,x,y) for no fill
