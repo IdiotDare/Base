@@ -8,4 +8,4 @@ ctx.fillStyle = "00FFFF";
 //      ctx.fillRect(0, 0, 150, 75);
 
 
-ctx.fillRect(0, 0, 100, 100);
+ctx.fillRect(50, 50, 100, 100);
