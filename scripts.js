@@ -1,9 +1,5 @@
+var canvas = document.getElementById("myCanvas")//id is in quotes
+//the getContext() is a built in HTML Object, with properties and methods for drawing.
+var ctx = canvas.getContext("2d");
 
-var testing = JSON.parse(testing.json);
-var test = [
-  "yeet",
-  "beep"
-  ]
-function function(){
-  document.getElementById("demo").innerHTML = test[0];
-}
+ctx.fillStyle = "00FFFF";
